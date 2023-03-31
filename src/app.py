@@ -65,7 +65,7 @@ def delete_member(id):
         return jsonify({"Message" : "Bad Request"}), 400
     jackson_family.delete_member(id)
     return jsonify({ "done" : True }), 200
-    return jsonify(members)
+    # return jsonify(members)
 
 # this only runs if `$ python src/app.py` is executed
 if __name__ == '__main__':
